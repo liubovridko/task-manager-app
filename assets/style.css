@@ -1,0 +1,110 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+     }
+
+header {
+        background-color: #0c5408;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        }
+
+main {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        padding: 20px;
+        }
+#task-list, #done-list {
+        display: flex;
+        flex-direction: column;
+        list-style: decimal;
+        padding: 0;
+    }   
+
+#task-list > li, #done-list > li{
+       margin-bottom: 5px;
+     } 
+
+#todo-column, #done-column {
+        width: 45%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        overflow-y: auto;
+        /*max-height: 70vh;*/
+        }
+.loading {
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+        
+.task-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+.task-actions {
+        display: flex;
+        gap: 5px;
+    }
+
+#add-task-form {
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+#add-task-form input, #add-task-form textarea, #add-task-form button {
+            margin: 5px;
+        }
+
+button {
+        cursor: pointer;
+        background-color:#0c5408;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        }
+
+.edit-form {
+      margin-top: 10px;
+    }
+
+.edit-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+.edit-form input,
+.edit-form textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+.edit-form button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+.edit-form button:hover {
+        background-color: #45a049;
+    }       
